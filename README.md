@@ -11,7 +11,7 @@ administrativo CRUD de usuarios, consumiendo el backend **FrontEnd-Backend-ClubD
 
 ## Estructura del proyecto (frontend)
 
-src/
+```text
 ├── assets/images/      # Logo y recursos gráficos
 ├── components/users/   # UserFormModal.jsx (crear/editar usuario)
 ├── layouts/             # AdminLayout, UserLayout, CoachLayout
@@ -23,6 +23,7 @@ src/
 ├── routes/              # AppRoutes, ProtectedRoute, RoleRoute
 ├── services/            # authService.js, userService.js, apiError.js
 └── styles/              # CSS por módulo / rol
+```
 
 ## Cómo instalar las dependencias (frontend)
 Primero abrir la terminal en la carpeta del proyecto de FrontEnd y ejecutar los siguientes comandos:
