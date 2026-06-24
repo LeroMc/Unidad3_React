@@ -1,0 +1,75 @@
+.registro-theme {
+  background-color: rgb(158, 88, 216);
+  min-height: 100vh;
+  font-family: Helvetica, sans-serif;
+}
+
+.registro-theme header {
+  background-color: rgb(214, 196, 113);
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+
+.registro-theme .registro-logo {
+  width: 180px;
+  margin-right: 20px;
+}
+
+.registro-theme .contenedor-centrado {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.registro-theme .seccion-formulario {
+  background-color: rgb(214, 196, 113);
+  width: 100%;
+  max-width: 560px;
+  padding: 30px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.registro-theme .seccion-formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registro-theme .form-label {
+  font-weight: bold;
+}
+
+.registro-theme input,
+.registro-theme select {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.registro-theme .btn-registrar {
+  background-color: white;
+  border: 2px solid black;
+  padding: 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.registro-theme .btn-registrar:hover {
+  background-color: rgb(158, 88, 216);
+  color: white;
+}
+
+.registro-theme .link-volver {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+}
+
+.registro-theme .link-volver:hover {
+  color: #1d3557;
+}
