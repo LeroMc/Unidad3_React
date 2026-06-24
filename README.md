@@ -12,14 +12,15 @@ administrativo CRUD de usuarios, consumiendo el backend **FrontEnd-Backend-ClubD
 ## Estructura del proyecto (frontend)
 
 ```text
-├── assets/images/      # Logo y recursos gráficos
-├── components/users/   # UserFormModal.jsx (crear/editar usuario)
+src/
+├── assets/images/       # Logo y recursos gráficos
+├── components/users/    # UserFormModal.jsx (crear/editar usuario)
 ├── layouts/             # AdminLayout, UserLayout, CoachLayout
 ├── pages/
 │   ├── admin/           # AdminDashboard, UsersPage (CRUD)
 │   ├── coach/           # CoachDashboard
 │   ├── user/            # UserDashboard
-│   ├── Home.jsx, Login.jsx, Registro.jsx, Perfil.jsx, Unauthorized.jsx
+│   └── Home.jsx, Login.jsx, Registro.jsx, Perfil.jsx, Unauthorized.jsx
 ├── routes/              # AppRoutes, ProtectedRoute, RoleRoute
 ├── services/            # authService.js, userService.js, apiError.js
 └── styles/              # CSS por módulo / rol
