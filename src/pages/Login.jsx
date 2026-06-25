@@ -4,7 +4,7 @@ import { Alert, Button, Form, Spinner } from "react-bootstrap"
 import Swal from "sweetalert2"
 import { loginUser, saveSession } from "../services/authService"
 import logo from "../assets/images/logo1.png"
-import "../styles/login.css"
+import "../styles/Login.css"
 
 function Login() {
   const navigate = useNavigate()
@@ -98,7 +98,7 @@ function Login() {
         <hr />
 
         <nav className="login-links">
-          <Link to="/registro">Registrarse</Link>
+          <Link to="/Register">Registrarse</Link>
           <span> | </span>
           <Link to="/">Volver al inicio</Link>
         </nav>

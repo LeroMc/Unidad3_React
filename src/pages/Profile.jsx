@@ -11,9 +11,9 @@ import {
 } from "../services/authService"
 import logo from "../assets/images/logo1.png"
 import avatar from "../assets/images/logousuario.webp"
-import "../styles/perfil.css"
+import "../styles/Profile.css"
 
-function Perfil() {
+function Profile() {
   const navigate = useNavigate()
   const [user, setUser] = useState(getUser())
   const [loading, setLoading] = useState(true)
@@ -39,7 +39,7 @@ function Perfil() {
     })
   }
 
-  const cargarPerfil = async () => {
+  const loadProfile = async () => {
     try {
       setLoading(true)
       const data = await getMe()
@@ -55,7 +55,7 @@ function Perfil() {
   }
 
   useEffect(() => {
-    cargarPerfil()
+    loadProfile()
   }, [])
 
   const handleChange = (event) => {
@@ -259,4 +259,4 @@ function Perfil() {
   )
 }
 
-export default Perfil
+export default Profile

@@ -2,7 +2,7 @@ import { Link, Outlet, useNavigate } from "react-router-dom"
 import { Button, Container, Nav, Navbar } from "react-bootstrap"
 import { logout, getUser } from "../services/authService"
 import logo from "../assets/images/logo1.png"
-import "../styles/user.css"
+import "../styles/User.css"
 
 function UserLayout() {
   const navigate = useNavigate()
@@ -29,7 +29,7 @@ function UserLayout() {
             </Nav>
             <Nav className="d-flex align-items-center gap-2">
               <span className="text-white me-2">{user?.full_name}</span>
-              <Nav.Link as={Link} to="/perfil">
+              <Nav.Link as={Link} to="/profile">
                 <Button className="btn-role" size="sm">Mi Perfil</Button>
               </Nav.Link>
               <Button variant="outline-light" size="sm" onClick={handleLogout}>

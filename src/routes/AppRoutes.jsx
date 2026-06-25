@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import Home from "../pages/Home"
 import Login from "../pages/Login"
-import Registro from "../pages/Registro"
+import Register from "../pages/Register"
 import Unauthorized from "../pages/Unauthorized"
-import Perfil from "../pages/Perfil"
+import Profile from "../pages/Profile"
 
 import UserDashboard from "../pages/user/UserDashboard"
 import CoachDashboard from "../pages/coach/CoachDashboard"
@@ -23,8 +23,8 @@ function AppRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/registro" element={<Registro />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
         <Route path="/unauthorized" element={<Unauthorized />} />
 
         <Route
@@ -62,10 +62,10 @@ function AppRoutes() {
         </Route>
 
         <Route
-          path="/perfil"
+          path="/profile"
           element={
             <ProtectedRoute>
-              <Perfil />
+              <Profile />
             </ProtectedRoute>
           }
         />

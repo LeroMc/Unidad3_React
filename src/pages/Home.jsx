@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import logo from "../assets/images/logo1.png"
-import "../styles/landing.css"
+import "../styles/Landing.css"
 
 function Home() {
   return (
@@ -12,8 +12,8 @@ function Home() {
         <nav>
           <ul className="menus">
             <li><a href="#clases">Clases</a></li>
-            <li><Link to="/login" className="btn-nav">Iniciar Sesión</Link></li>
-            <li><Link to="/registro" className="btn-nav highlight">Registrarse</Link></li>
+            <li><Link to="/Login" className="btn-nav">Iniciar Sesión</Link></li>
+            <li><Link to="/Register" className="btn-nav highlight">Registrarse</Link></li>
           </ul>
         </nav>
       </header>
@@ -23,7 +23,7 @@ function Home() {
           <div className="panel-bienvenida">
             <h1>BIENVENIDO A SPORTCLUB</h1>
             <p>Lleva tu entrenamiento al siguiente nivel con los mejores profesionales.</p>
-            <Link to="/registro" className="btn-principal">Comenzar Ahora</Link>
+            <Link to="/Register" className="btn-principal">Comenzar Ahora</Link>
           </div>
         </section>
 

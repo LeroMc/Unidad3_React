@@ -4,7 +4,7 @@ import { Form } from "react-bootstrap"
 import Swal from "sweetalert2"
 import { registerUser } from "../services/authService"
 import logo from "../assets/images/logo1.png"
-import "../styles/registro.css"
+import "../styles/Register.css"
 
 const initialForm = {
   full_name: "",
@@ -16,7 +16,7 @@ const initialForm = {
   confirm_password: "",
 }
 
-function Registro() {
+function Register() {
   const navigate = useNavigate()
   const [formData, setFormData] = useState(initialForm)
   const [error, setError] = useState("")
@@ -201,7 +201,7 @@ function Registro() {
               REGISTRARSE
             </button>
 
-            <Link to="/login" className="link-volver">
+            <Link to="/Login" className="link-volver">
               Volver al inicio
             </Link>
           </Form>
@@ -211,4 +211,4 @@ function Registro() {
   )
 }
 
-export default Registro
+export default Register
