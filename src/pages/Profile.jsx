@@ -11,7 +11,7 @@ import {
 } from "../services/authService"
 import logo from "../assets/images/logo1.png"
 import avatar from "../assets/images/logousuario.webp"
-import "../styles/Profile.css"
+import "../styles/profile.css"
 
 function Profile() {
   const navigate = useNavigate()

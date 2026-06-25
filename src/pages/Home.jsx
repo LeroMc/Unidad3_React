@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import logo from "../assets/images/logo1.png"
-import "../styles/Landing.css"
+import "../styles/landing.css"
 
 function Home() {
   return (

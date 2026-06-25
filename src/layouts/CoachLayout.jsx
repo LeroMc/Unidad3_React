@@ -2,7 +2,7 @@ import { Link, Outlet, useNavigate } from "react-router-dom"
 import { Button, Container, Nav, Navbar } from "react-bootstrap"
 import { logout, getUser } from "../services/authService"
 import logo from "../assets/images/logo1.png"
-import "../styles/Coach.css"
+import "../styles/coach.css"
 
 function CoachLayout() {
   const navigate = useNavigate()

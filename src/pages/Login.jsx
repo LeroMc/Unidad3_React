@@ -4,7 +4,7 @@ import { Alert, Button, Form, Spinner } from "react-bootstrap"
 import Swal from "sweetalert2"
 import { loginUser, saveSession } from "../services/authService"
 import logo from "../assets/images/logo1.png"
-import "../styles/Login.css"
+import "../styles/login.css"
 
 function Login() {
   const navigate = useNavigate()

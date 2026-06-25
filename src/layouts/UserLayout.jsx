@@ -2,7 +2,7 @@ import { Link, Outlet, useNavigate } from "react-router-dom"
 import { Button, Container, Nav, Navbar } from "react-bootstrap"
 import { logout, getUser } from "../services/authService"
 import logo from "../assets/images/logo1.png"
-import "../styles/User.css"
+import "../styles/user.css"
 
 function UserLayout() {
   const navigate = useNavigate()

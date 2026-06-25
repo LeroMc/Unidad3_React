@@ -4,7 +4,7 @@ import { Form } from "react-bootstrap"
 import Swal from "sweetalert2"
 import { registerUser } from "../services/authService"
 import logo from "../assets/images/logo1.png"
-import "../styles/Register.css"
+import "../styles/register.css"
 
 const initialForm = {
   full_name: "",
