@@ -1,0 +1,27 @@
+.gestion-usuarios-page .badge-rol {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.gestion-usuarios-page .badge-rol.admin { background-color: rgb(123, 44, 191); }
+.gestion-usuarios-page .badge-rol.coach { background-color: #28a745; }
+.gestion-usuarios-page .badge-rol.user { background-color: #007bff; }
+
+.gestion-usuarios-page .toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.gestion-usuarios-page .toolbar input,
+.gestion-usuarios-page .toolbar select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

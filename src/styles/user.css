@@ -1,0 +1,126 @@
+.user-theme {
+  --principal: rgb(33, 110, 214);
+  --principal-oscuro: rgb(20, 70, 150);
+  --acento: rgb(214, 196, 113);
+  background-color: #e9f1fb;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.user-theme .navbar-role {
+  background-color: var(--principal) !important;
+  border-bottom: 3px solid var(--principal-oscuro);
+}
+
+.user-theme .navbar-role .navbar-brand,
+.user-theme .navbar-role .nav-link {
+  color: white !important;
+  font-weight: bold;
+}
+
+.user-theme .navbar-role .nav-link:hover {
+  color: var(--acento) !important;
+}
+
+.user-theme .navbar-role img {
+  height: 42px;
+  margin-right: 10px;
+}
+
+.user-theme .btn-role {
+  background-color: var(--principal);
+  border: 2px solid var(--principal-oscuro);
+  color: white;
+  font-weight: bold;
+}
+
+.user-theme .btn-role:hover {
+  background-color: var(--principal-oscuro);
+  color: white;
+}
+
+.user-theme .caja-bienvenida {
+  border-left: 10px solid var(--principal);
+  border-radius: 10px;
+  margin: 20px 30px;
+  background-color: white;
+  padding: 15px 25px;
+}
+
+.user-theme .caja-bienvenida h1 {
+  margin: 0;
+  color: var(--principal-oscuro);
+}
+
+.user-theme .caja-principal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 10px 30px 30px;
+  align-items: flex-start;
+}
+
+.user-theme .panel {
+  background-color: white;
+  border: 2px solid var(--principal);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.user-theme .panel h2 {
+  color: var(--principal-oscuro);
+  margin-top: 0;
+}
+
+.user-theme .gestion-usuarios {
+  width: 100%;
+  max-width: 320px;
+}
+
+.user-theme .gestion-usuarios a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--principal);
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.user-theme .gestion-usuarios a:hover {
+  background-color: var(--principal-oscuro);
+}
+
+.user-theme .columna-derecha {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user-theme .item-clase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+}
+
+.user-theme .item-clase button,
+.user-theme .panel p button {
+  border-radius: 8px;
+  border: 1px solid var(--principal);
+  background-color: white;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.user-theme .item-clase button:hover,
+.user-theme .panel p button:hover {
+  background-color: var(--principal);
+  color: white;
+}

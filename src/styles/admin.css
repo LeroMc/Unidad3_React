@@ -1,0 +1,74 @@
+.admin-theme {
+  --admin-red: rgb(191, 44, 44);
+  --admin-red-dark: rgb(150, 28, 28);
+  --admin-red-light: #fdf0f0;
+  --admin-gold: rgb(214, 196, 113);
+  font-family: Helvetica, sans-serif;
+  background-color: var(--admin-red-light);
+  min-height: 100vh;
+}
+
+/* ── Bienvenida ─────────────────────────────────── */
+.admin-theme .caja-bienvenida {
+  border-left: 8px solid var(--admin-red);
+  border-radius: 10px;
+  margin: 20px 24px 0;
+  background-color: white;
+  padding: 15px 25px;
+  box-shadow: 0 1px 4px rgba(191,44,44,.12);
+}
+.admin-theme .caja-bienvenida h1 {
+  margin: 0;
+  color: var(--admin-red-dark);
+  font-size: 1.6rem;
+}
+
+/* ── Card header rojo (usado en todas las páginas) ─ */
+.admin-card-header {
+  background-color: rgb(191, 44, 44) !important;
+  color: white !important;
+}
+
+/* ── Botones de acción en tablas ────────────────── */
+.btn-admin-edit {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000 !important;
+  font-weight: 500;
+}
+.btn-admin-edit:hover {
+  background-color: #e0a800;
+  border-color: #e0a800;
+  color: #000 !important;
+}
+
+.btn-admin-delete {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #000 !important;
+  font-weight: 500;
+}
+.btn-admin-delete:hover {
+  background-color: #bb2d3b;
+  border-color: #bb2d3b;
+  color: #000 !important;
+}
+.btn-admin-delete:disabled {
+  opacity: .5;
+  color: #000 !important;
+}
+
+/* ── Toolbar de búsqueda/filtro ─────────────────── */
+.admin-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* ── Badge roles ─────────────────────────────────── */
+.badge-rol { padding: 5px 10px; border-radius: 5px; color: white; font-weight: bold; text-transform: uppercase; font-size: 10px; }
+.badge-rol.admin   { background-color: rgb(191,44,44); }
+.badge-rol.coach   { background-color: #28a745; }
+.badge-rol.user    { background-color: #007bff; }

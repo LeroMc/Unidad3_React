@@ -1,0 +1,75 @@
+.login-theme {
+  background-color: rgb(158, 88, 216);
+  min-height: 100vh;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.login-theme .login-card {
+  background-color: rgb(214, 196, 113);
+  border-radius: 30px;
+  border: 3px solid black;
+  padding: 30px 35px;
+  width: 420px;
+  text-align: center;
+}
+
+.login-theme .login-logo {
+  width: 220px;
+  margin-bottom: 10px;
+}
+
+.login-theme h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.login-theme .form-label {
+  text-align: left;
+  display: block;
+  font-weight: bold;
+}
+
+.login-theme input {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.login-theme .btn-ingresar {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 8px 0;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.login-theme .btn-ingresar:hover {
+  background-color: rgb(158, 88, 216);
+  color: white;
+}
+
+.login-theme hr {
+  border-color: black;
+  margin: 20px 0;
+}
+
+.login-theme .login-links a {
+  color: black;
+  font-size: 15px;
+  margin: 0 6px;
+}
+
+.login-theme .login-links a:hover {
+  color: #1d3557;
+}
+
+.login-theme footer {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #2b2b2b;
+}

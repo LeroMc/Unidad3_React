@@ -1,0 +1,103 @@
+.perfil-theme {
+  background-color: rgb(158, 88, 216);
+  min-height: 100vh;
+  font-family: Helvetica, sans-serif;
+}
+
+.perfil-theme header {
+  background-color: rgb(214, 196, 113);
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+
+.perfil-theme header img {
+  width: 200px;
+}
+
+.perfil-theme .btn-volver {
+  background-color: white;
+  border: 2px solid black;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.perfil-theme .btn-volver:hover {
+  background-color: rgb(158, 88, 216);
+  color: white;
+}
+
+.perfil-theme .contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perfil-theme .barra-perfil {
+  width: 260px;
+  background: #f9faf8;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.perfil-theme .foto-usuario img {
+  width: 130px;
+  height: 130px;
+  border-radius: 10%;
+  border: 4px solid rgb(158, 88, 216);
+  margin-bottom: 10px;
+}
+
+.perfil-theme .badge-rol {
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.perfil-theme .badge-rol.admin { background-color: #dc3545; }
+.perfil-theme .badge-rol.coach { background-color: #28a745; }
+.perfil-theme .badge-rol.user { background-color: #007bff; }
+
+.perfil-theme .info-item {
+  display: flex;
+  gap: 10px;
+  text-align: left;
+  margin-top: 14px;
+}
+
+.perfil-theme .info-campo {
+  font-weight: bold;
+  display: block;
+  font-size: 13px;
+}
+
+.perfil-theme .info-valor {
+  font-size: 13px;
+  color: #444;
+}
+
+.perfil-theme .caja-blanca {
+  background: #f9faf8;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 25px;
+  flex: 1;
+  min-width: 320px;
+}
+
+.perfil-theme .caja-blanca h3 {
+  margin-top: 0;
+}
