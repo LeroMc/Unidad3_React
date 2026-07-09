@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect, useMemo } from "react"
 import { Badge, Button, Card, Col, Form, Row, Spinner, Table } from "react-bootstrap"
 import Swal from "sweetalert2"
@@ -122,7 +121,7 @@ function SportsPage() {
     <main className="container-fluid py-4">
       <Card className="shadow-sm">
         <Card.Header className="admin-card-header d-flex justify-content-between align-items-center py-3">
-          <h4 className="mb-0">🏆 Gestión de Deportes</h4>
+          <h4 className="mb-0">Gestión de Deportes</h4>
           <div className="d-flex gap-2">
             <Button variant="light" onClick={loadSports} disabled={loading}>
               {loading ? <Spinner animation="border" size="sm" /> : "🔄 Refrescar"}

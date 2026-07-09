@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect } from "react"
 import { Badge, Button, Card, Spinner, Table } from "react-bootstrap"
 import Swal from "sweetalert2"
@@ -96,7 +95,7 @@ function SchedulesPage() {
               <tbody>
                 {schedules.map((s) => (
                   <tr key={s.id}>
-                    <td><strong>#{s.id}</strong></td>
+                    <td><strong>{s.id}</strong></td>
                     <td>{getAssignmentLabel(s)}</td>
                     <td>{DAYS[s.day_of_week] || s.day_of_week}</td>
                     <td>{s.start_time}</td>

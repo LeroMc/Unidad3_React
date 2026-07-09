@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect } from "react"
 import { Badge, Button, Card, Spinner, Table } from "react-bootstrap"
 import Swal from "sweetalert2"
@@ -106,7 +105,7 @@ function AssignmentsPage() {
                   const info = label(a)
                   return (
                     <tr key={a.id}>
-                      <td><strong>#{a.id}</strong></td>
+                      <td><strong>{a.id}</strong></td>
                       <td>{info.sport}</td>
                       <td>{info.room}</td>
                       <td>{info.coach}</td>

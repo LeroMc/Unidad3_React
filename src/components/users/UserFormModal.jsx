@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useEffect, useState } from "react"
 import { Button, Form, Modal } from "react-bootstrap"
 

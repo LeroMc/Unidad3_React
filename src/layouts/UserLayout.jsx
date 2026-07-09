@@ -19,8 +19,10 @@ function UserLayout() {
       <Navbar expand="lg" className="navbar-role" variant="dark">
         <Container>
           <Navbar.Brand as={Link} to="/user/dashboard">
-            <img src={logo} alt="Logo SportClub" />
-            SportClub
+            <img src={logo} alt="SportClub" style={{ height: "54px", width: "auto", objectFit: "contain" }}/>
+             <span className="fw-bold fs-5 text-white">
+              Sport<span style={{ color: "#ffc107" }}>Club</span>
+            </span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="user-nav" />
           <Navbar.Collapse id="user-nav">

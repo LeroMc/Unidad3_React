@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect } from "react"
 import { Badge, Button, Card, Spinner, Table } from "react-bootstrap"
 import Swal from "sweetalert2"
@@ -84,7 +83,7 @@ function RoomsPage() {
               <tbody>
                 {rooms.map((r) => (
                   <tr key={r.id}>
-                    <td><strong>#{r.id}</strong></td>
+                    <td><strong>{r.id}</strong></td>
                     <td className="fw-semibold">{r.name}</td>
                     <td><span className="text-muted small">{r.description}</span></td>
                     <td>{r.capacity} personas</td>

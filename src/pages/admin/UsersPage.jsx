@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useEffect, useMemo, useState } from "react"
 import { Badge, Button, Card, Col, Form, Row, Spinner, Table } from "react-bootstrap"
 import Swal from "sweetalert2"
@@ -104,7 +103,6 @@ function UsersPage() {
         <Card.Body>
           <p className="text-muted mb-3">Administra los usuarios del sistema, cambia roles y gestiona permisos.</p>
 
-          {/* Toolbar */}
           <Row className="g-2 mb-3">
             <Col md={7}>
               <Form.Control
@@ -145,7 +143,7 @@ function UsersPage() {
               <tbody>
                 {filteredUsers.map((user) => (
                   <tr key={user.id}>
-                    <td><strong>#{user.id}</strong></td>
+                    <td><strong>{user.id}</strong></td>
                     <td className="fw-semibold">{user.full_name}</td>
                     <td>{user.email}</td>
                     <td>

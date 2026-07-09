@@ -1,9 +1,11 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect } from "react"
 import { Card, Col, Row, Spinner } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { getUser } from "../../services/authService"
 import { getCoachDashboard } from "../../services/coachService"
+
+const GREEN = "rgb(9, 192, 103)"
+const GREEN_DARK = "rgb(2, 208, 12)"
 
 function CoachDashboard() {
   const user = getUser()
@@ -33,7 +35,7 @@ function CoachDashboard() {
               <Card className="shadow-sm border-0 bg-success text-white">
                 <Card.Body className="d-flex justify-content-between align-items-center">
                   <div><div className="fs-2 fw-bold">{stats?.total_classes ?? "—"}</div><div className="small">Mis Clases</div></div>
-                  <div className="fs-1 opacity-50">🎯</div>
+                  <div className="fs-1 opacity 0">🎯</div>
                 </Card.Body>
               </Card>
             </Col>
@@ -41,7 +43,7 @@ function CoachDashboard() {
               <Card className="shadow-sm border-0 bg-teal text-white" style={{ backgroundColor: "#20c997" }}>
                 <Card.Body className="d-flex justify-content-between align-items-center">
                   <div><div className="fs-2 fw-bold">{stats?.total_schedules ?? "—"}</div><div className="small">Horarios Activos</div></div>
-                  <div className="fs-1 opacity-50">📅</div>
+                  <div className="fs-1 opacity 0">📅</div>
                 </Card.Body>
               </Card>
             </Col>
@@ -49,7 +51,7 @@ function CoachDashboard() {
               <Card className="shadow-sm border-0 bg-info text-white">
                 <Card.Body className="d-flex justify-content-between align-items-center">
                   <div><div className="fs-2 fw-bold">{stats?.total_rooms ?? "—"}</div><div className="small">Salas Asignadas</div></div>
-                  <div className="fs-1 opacity-50">🏟️</div>
+                  <div className="fs-1 opacity 0">🏟️</div>
                 </Card.Body>
               </Card>
             </Col>
@@ -58,8 +60,8 @@ function CoachDashboard() {
 
         <Row className="g-3">
           <Col md={6}>
-            <Card as={Link} to="/coach/my-classes" className="shadow-sm text-decoration-none h-100 border-0"
-              style={{ transition: "transform .15s" }}
+            <Card as={Link} to="/coach/my-classes" className="shadow-sm text-decoration-none h-100 border-2"
+              style={{ transition: "transform .15s", border: `2px solid ${GREEN}` }}
               onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-3px)"}
               onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}>
               <Card.Body>
@@ -70,8 +72,8 @@ function CoachDashboard() {
             </Card>
           </Col>
           <Col md={6}>
-            <Card as={Link} to="/coach/my-schedule" className="shadow-sm text-decoration-none h-100 border-0"
-              style={{ transition: "transform .15s" }}
+            <Card as={Link} to="/coach/my-schedule" className="shadow-sm text-decoration-none h-100 border-2"
+              style={{ transition: "transform .15s", border: `2px solid ${GREEN}` }}
               onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-3px)"}
               onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}>
               <Card.Body>

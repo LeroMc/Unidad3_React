@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect } from "react"
 import { Badge, Button, Card, Col, Row, Spinner } from "react-bootstrap"
 import Swal from "sweetalert2"

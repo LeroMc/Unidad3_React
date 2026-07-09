@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect } from "react"
 import { Card, Col, Row, Spinner } from "react-bootstrap"
 import { Link } from "react-router-dom"
@@ -66,7 +65,7 @@ function AdminDashboard() {
           rooms:       Array.isArray(roomsData)   ? roomsData.length   : "—",
           assignments: Array.isArray(assignData)  ? assignData.length  : "—",
         })
-      } catch { /* stats keep dashes */ }
+      } catch {}
       finally { setLoading(false) }
     }
     loadStats()
@@ -82,7 +81,6 @@ function AdminDashboard() {
       </div>
 
       <main className="p-4">
-        {/* Tarjetas de estadísticas */}
         {loading ? (
           <div className="text-center py-4"><Spinner animation="border" style={{ color: RED }} /></div>
         ) : (
@@ -94,7 +92,6 @@ function AdminDashboard() {
           </Row>
         )}
 
-        {/* Accesos rápidos a módulos */}
         <Row className="g-3">
           {MODULES.map((item) => (
             <Col md={4} key={item.to}>

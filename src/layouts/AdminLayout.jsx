@@ -25,7 +25,6 @@ function AdminLayout() {
         variant="dark"
       >
         <Container fluid>
-          {/* Logo igual al de la página de Perfil — natural, a la izquierda */}
           <Navbar.Brand as={Link} to="/admin/dashboard" className="d-flex align-items-center gap-2 p-0">
             <img
               src={logo}
@@ -44,12 +43,12 @@ function AdminLayout() {
           <Navbar.Collapse id="admin-nav">
             <Nav className="me-auto ms-3 gap-1">
               {[
-                ["/admin/dashboard",  "📊 Dashboard"],
-                ["/admin/users",      "👥 Usuarios"],
-                ["/admin/sports",     "🏆 Deportes"],
-                ["/admin/rooms",      "🏟️ Salas"],
-                ["/admin/assignments","🔗 Asignaciones"],
-                ["/admin/schedules",  "🕐 Horarios"],
+                ["/admin/dashboard",  "Dashboard"],
+                ["/admin/users",      "Usuarios"],
+                ["/admin/sports",     "Deportes"],
+                ["/admin/rooms",      "Salas"],
+                ["/admin/assignments","Asignaciones"],
+                ["/admin/schedules",  "Horarios"],
               ].map(([to, label]) => (
                 <Nav.Link
                   key={to}
@@ -69,7 +68,7 @@ function AdminLayout() {
                 Hola, <strong className="text-warning">{user.full_name || "Admin"}</strong>
               </span>
               <Button as={Link} to="/profile" variant="outline-light" size="sm">
-                👤 Mi Perfil
+                Mi Perfil
               </Button>
               <Button
                 size="sm"

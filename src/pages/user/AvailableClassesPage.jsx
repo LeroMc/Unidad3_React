@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect } from "react"
 import { Badge, Button, Card, Col, Modal, Form, Row, Spinner } from "react-bootstrap"
 import Swal from "sweetalert2"
@@ -59,7 +58,7 @@ function AvailableClassesPage() {
   return (
     <main className="container-fluid py-4">
       <div className="d-flex justify-content-between align-items-center mb-4">
-        <h3 className="mb-0">📋 Clases Disponibles</h3>
+        <h3 className="mb-0">Clases Disponibles</h3>
         <Button variant="outline-secondary" size="sm" onClick={loadClasses} disabled={loading}>
           {loading ? <Spinner size="sm" animation="border" /> : "🔄 Refrescar"}
         </Button>
@@ -116,7 +115,6 @@ function AvailableClassesPage() {
         </Row>
       )}
 
-      {/* Modal de confirmación de reserva */}
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
         <Modal.Header closeButton className="bg-primary text-white">
           <Modal.Title>📌 Confirmar Reserva</Modal.Title>

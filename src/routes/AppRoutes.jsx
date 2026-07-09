@@ -5,7 +5,6 @@ import Login from "../pages/Login"
 import Register from "../pages/Register"
 import Unauthorized from "../pages/Unauthorized"
 import Profile from "../pages/Profile"
-
 // Admin pages
 import AdminDashboard from "../pages/admin/AdminDashboard"
 import UsersPage from "../pages/admin/UsersPage"
@@ -13,22 +12,18 @@ import SportsPage from "../pages/admin/SportsPage"
 import RoomsPage from "../pages/admin/RoomsPage"
 import AssignmentsPage from "../pages/admin/AssignmentsPage"
 import SchedulesPage from "../pages/admin/SchedulesPage"
-
 // Coach pages
 import CoachDashboard from "../pages/coach/CoachDashboard"
 import MyClassesPage from "../pages/coach/MyClassesPage"
 import MySchedulePage from "../pages/coach/MySchedulePage"
-
 // User pages
 import UserDashboard from "../pages/user/UserDashboard"
 import AvailableClassesPage from "../pages/user/AvailableClassesPage"
 import MyReservationsPage from "../pages/user/MyReservationsPage"
-
 // Layouts
 import AdminLayout from "../layouts/AdminLayout"
 import CoachLayout from "../layouts/CoachLayout"
 import UserLayout from "../layouts/UserLayout"
-
 // Route guards
 import ProtectedRoute from "./ProtectedRoute"
 import RoleRoute from "./RoleRoute"
@@ -37,16 +32,16 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Public routes */}
+        {/*RutasPublicas*/}
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/unauthorized" element={<Unauthorized />} />
 
-        {/* Profile — any authenticated user */}
+        {/*CualquierUsuarioAutenticado*/}
         <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
 
-        {/* User routes */}
+        {/*RutasUsuario*/}
         <Route
           path="/user"
           element={<RoleRoute allowedRoles={["user"]}><UserLayout /></RoleRoute>}
@@ -56,7 +51,7 @@ function AppRoutes() {
           <Route path="reservations" element={<MyReservationsPage />} />
         </Route>
 
-        {/* Coach routes */}
+        {/*RutasCoach*/}
         <Route
           path="/coach"
           element={<RoleRoute allowedRoles={["coach"]}><CoachLayout /></RoleRoute>}
@@ -66,7 +61,7 @@ function AppRoutes() {
           <Route path="my-schedule" element={<MySchedulePage />} />
         </Route>
 
-        {/* Admin routes */}
+        {/*RutasAdmin*/}
         <Route
           path="/admin"
           element={<RoleRoute allowedRoles={["admin"]}><AdminLayout /></RoleRoute>}

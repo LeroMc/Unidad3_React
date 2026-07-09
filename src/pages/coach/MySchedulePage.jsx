@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect } from "react"
 import { Badge, Button, Card, Spinner, Table } from "react-bootstrap"
 import Swal from "sweetalert2"
@@ -25,7 +24,7 @@ function MySchedulePage() {
     <main className="container-fluid py-4">
       <Card className="shadow-sm">
         <Card.Header className="bg-success text-white d-flex justify-content-between align-items-center py-3">
-          <h4 className="mb-0">📅 Mi Horario Semanal</h4>
+          <h4 className="mb-0">Mi Horario Semanal</h4>
           <Button variant="light" size="sm" onClick={loadSchedules} disabled={loading}>
             {loading ? <Spinner size="sm" animation="border" /> : "🔄 Refrescar"}
           </Button>

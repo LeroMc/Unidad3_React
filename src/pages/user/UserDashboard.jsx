@@ -4,6 +4,9 @@ import { Link } from "react-router-dom"
 import { getUser } from "../../services/authService"
 import { getMemberDashboard } from "../../services/memberService"
 
+const BLUE = "rgb(131, 155, 232)"
+const BLUE_DARK = "rgb(6, 2, 145)"
+
 function UserDashboard() {
   const user = getUser()
   const [stats, setStats] = useState(null)
@@ -32,7 +35,7 @@ function UserDashboard() {
               <Card className="shadow-sm border-0 bg-primary text-white">
                 <Card.Body className="d-flex justify-content-between align-items-center">
                   <div><div className="fs-2 fw-bold">{stats?.available_classes ?? "—"}</div><div className="small">Clases Disponibles</div></div>
-                  <div className="fs-1 opacity-50">📋</div>
+                  <div className="fs-1 opacity 0">📋</div>
                 </Card.Body>
               </Card>
             </Col>
@@ -40,7 +43,7 @@ function UserDashboard() {
               <Card className="shadow-sm border-0 bg-info text-white">
                 <Card.Body className="d-flex justify-content-between align-items-center">
                   <div><div className="fs-2 fw-bold">{stats?.available_sports ?? "—"}</div><div className="small">Deportes Activos</div></div>
-                  <div className="fs-1 opacity-50">🏅</div>
+                  <div className="fs-1 opacity 0">🏅</div>
                 </Card.Body>
               </Card>
             </Col>
@@ -48,7 +51,7 @@ function UserDashboard() {
               <Card className="shadow-sm border-0 bg-success text-white">
                 <Card.Body className="d-flex justify-content-between align-items-center">
                   <div><div className="fs-2 fw-bold">{stats?.available_schedules ?? "—"}</div><div className="small">Horarios Activos</div></div>
-                  <div className="fs-1 opacity-50">🕐</div>
+                  <div className="fs-1 opacity 0">🕐</div>
                 </Card.Body>
               </Card>
             </Col>
@@ -57,8 +60,8 @@ function UserDashboard() {
 
         <Row className="g-3">
           <Col md={6}>
-            <Card as={Link} to="/user/classes" className="shadow-sm text-decoration-none h-100 border-0"
-              style={{ transition: "transform .15s" }}
+            <Card as={Link} to="/user/classes" className="shadow-sm text-decoration-none h-100 border-2"
+              style={{ transition: "transform .15s", border: `2px solid ${BLUE}` }}
               onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-3px)"}
               onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}>
               <Card.Body>
@@ -69,8 +72,8 @@ function UserDashboard() {
             </Card>
           </Col>
           <Col md={6}>
-            <Card as={Link} to="/user/reservations" className="shadow-sm text-decoration-none h-100 border-0"
-              style={{ transition: "transform .15s" }}
+            <Card as={Link} to="/user/reservations" className="shadow-sm text-decoration-none h-100 border-2"
+              style={{ transition: "transform .15s", border: `2px solid ${BLUE}` }}
               onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-3px)"}
               onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}>
               <Card.Body>

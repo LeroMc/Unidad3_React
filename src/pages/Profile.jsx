@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { Button, Form, Spinner } from "react-bootstrap"

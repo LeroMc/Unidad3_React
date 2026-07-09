@@ -19,8 +19,9 @@ function CoachLayout() {
       <Navbar expand="lg" className="navbar-role" variant="dark">
         <Container>
           <Navbar.Brand as={Link} to="/coach/dashboard">
-            <img src={logo} alt="Logo SportClub" />
-            SportClub Coach
+            <img src={logo} alt="SportClub" style={{ height: "54px", width: "auto", objectFit: "contain" }}/>
+            <span className="fw-bold fs-5 text-white">Sport<span style={{ color: "#ffc107" }}>Club</span>
+            </span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="coach-nav" />
           <Navbar.Collapse id="coach-nav">
